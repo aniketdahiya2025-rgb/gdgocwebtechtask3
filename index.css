@@ -1,5 +1,146 @@
+.body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 124, 1);
+}
 .container {
-  margin: 0 auto;
+  margin: 30px;
   padding: 20px;
   text-align: center;
+  background-color: white;
+    border-radius: 20px;
+}
+.tasklist button {
+  padding: 10px;
+  width: 100px;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 25px;
+}
+
+.tasklist :hover {
+  background-color: #bbb;
+}
+.navbar {
+    display:flex;
+    justify-content: space-around;
+}
+.navbardisplay {
+    margin-top: 14%;
+    margin-bottom: 14%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.button input[type="text"] {
+    padding: 10px 400px 10px 400px;
+    border: 2px solid #666;
+    border-radius: 100px;
+    font-size: 16px;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button input[type="text"]:focus {
+    border-color: rgb(255, 124, 1);
+}
+
+.button input[type="text"]::placeholder {
+    color: #999;
+}
+
+.button button {
+    padding: 10px 50px 10px 50px;
+    background-color: white;
+    border: 2px solid #666;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+    background-color: rgb(255, 124, 1);
+}
+
+.button button:active {
+    background-color: #f0f0f0;
+}
+@media (max-width:800px){
+    .body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 124, 1);
+}
+.container {
+  margin: 30px;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+    border-radius: 20px;
+}
+.tasklist button {
+  padding: 10px;
+  width: 100%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 25px;
+}
+
+.tasklist :hover {
+  background-color: #bbb;
+}
+.navbar {
+    display:flex;
+    justify-content: space-around;
+}
+.navbardisplay {
+    margin-top: 175px;
+    margin-bottom: 175px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.button input[type="text"] {
+    padding: 5% 10% 5% 10%;
+    border: 2px solid #666;
+    border-radius: 100px;
+    font-size: 12px;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button input[type="text"]:focus {
+    border-color: rgb(255, 124, 1);
+}
+
+.button input[type="text"]::placeholder {
+    color: #999;
+}
+
+.button button {
+    padding: 5% 30% 5% 30%;
+    background-color: white;
+    border: 2px solid #666;
+    border-radius: 100px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+    background-color: rgb(255, 124, 1);
+}
+
+.button button:active {
+    background-color: #e0e0e0;
+}
 }

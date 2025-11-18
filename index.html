@@ -3,25 +3,63 @@
     <head>
         <link rel="stylesheet" type="text/css" href="index.css">
         <title>Taskmaster</title>
+        <link rel="js" href="index.js">
+        <script defer src="index.js"></script>
     </head>
-    <body>
+    <body class="body">
         <!--Heading Part-->
         <div class="container">
+            <div style="color: rgb(255, 124, 1); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
             <h1>Taskmaster</h1>
+            </div>
             <p>Organize your day, one task at a time</p>
         <!--Task Input Form-->
             <form id="task-form">
+            <div style="display:flex; justify-content: space-evenly;">
+            <div class="button">
             <input type="text" id="task-input" placeholder="Enter a new task" required>
+            </div>
+            <div class="button">
             <button type="submit">Add Task</button>
+            </div>
         </form>
+            </div>
+            <hr>
         <!--Task List Display-->
-            <p>All</p>
-            <p>Active</p>
-            <p>Completed</p>
+        <div style="display: flex; justify-content: space-evenly;">
+            <div class="tasklist">
+                <button>All</button>
+            </div>
+            <div class="tasklist">
+                <button>Active</button>
+            </div>
+            <div class="tasklist">
+                <button>Completed</button>
+            </div>
+        </div>
+        <hr>
+        <!--navbardisplay-->
+        <div class="navbardisplay">
+        <p>No tasks yet. Add one to get started!</p>
+        </div>
         <!--Navbar-->
-            <p>Total</p>
-            <p>Active</p>
-            <p>Completed</p>
+        <hr>
+        <footer>
+            <div class="navbar">
+                <div>
+                <p>0</p>
+                <p>Total</p>
+                </div>
+                <div>
+                <p>0</p>
+                <p>Active</p>
+                </div>
+                <div>
+                <p>0</p>
+                <p>Completed</p>
+                </div>
+            </div>
+        </footer>
         </div>
     </body>
 </html>
